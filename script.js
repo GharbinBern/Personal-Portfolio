@@ -118,18 +118,22 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            setTimeout(() => {
+            // Enhanced animation for work items with optimized timing
+            if (entry.target.classList.contains('work-item')) {
+                setTimeout(() => {
+                    entry.target.classList.add('animate');
+                }, 100);
+            } else {
                 entry.target.classList.add('visible');
-            }, index * 100); // Stagger animations
+            }
         }
     });
 }, observerOptions);
 
-// Observe elements for animations with different animation types
+// Enhanced work item animations
 document.querySelectorAll('.work-item').forEach((el, index) => {
-    el.classList.add(index % 2 === 0 ? 'fade-in-left' : 'fade-in-right');
     observer.observe(el);
 });
 
@@ -209,6 +213,30 @@ function createDataPoint() {
 
 // Create new data points periodically
 setInterval(createDataPoint, 8000);
+
+// Enhanced Project Section Scrolling
+function enhanceProjectScrolling() {
+    const workSection = document.querySelector('#work');
+    const workItems = document.querySelectorAll('.work-item');
+    
+    // Add scroll-based parallax effect to project images
+    window.addEventListener('scroll', () => {
+        const sectionTop = workSection.offsetTop;
+        const sectionHeight = workSection.offsetHeight;
+        const scrolled = window.pageYOffset;
+        const rate = scrolled - sectionTop;
+        
+        if (scrolled > sectionTop - window.innerHeight && scrolled < sectionTop + sectionHeight) {
+            workItems.forEach((item, index) => {
+                const image = item.querySelector('.project-screenshot');
+                if (image) {
+                    const speed = 0.5 + (index * 0.1);
+                    image.style.transform = `translateY(${rate * speed * 0.1}px)`;
+                }
+            });
+        }
+    });
+}
 
 // Enhanced Work Item Interactions
 document.querySelectorAll('.work-item').forEach(item => {
@@ -405,7 +433,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
     
-
+    // Initialize enhanced project scrolling
+    enhanceProjectScrolling();
     
     // Add stagger animation to skill categories
     document.querySelectorAll('.skills-grid').forEach(grid => {
