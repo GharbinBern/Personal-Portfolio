@@ -52,14 +52,3 @@ portfolio/
 ├── README.md           # Project documentation
 
 ```
-
-## Contact
-
-Feel free to reach out for collaborations or questions:
-- Email: bg2696@nyu.edu
-- LinkedIn: [bernard-gharbin](http://linkedin.com/in/bernard-gharbin)
-- GitHub: [GharbinBern](https://github.com/GharbinBern)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
