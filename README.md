@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, responsive portfolio website showcasing my work as a Data Analyst and Backend Developer.
+A modern, responsive portfolio website showcasing my work as a Data Analyst and Software Developer.
 
 ## About
 
@@ -23,8 +23,8 @@ This portfolio website highlights my expertise in:
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Styling**: Custom CSS with CSS Grid and Flexbox
 - **Icons**: Font Awesome
-- **Fonts**: Google Fonts (Inter)
-- **Animation**: CSS transitions and JavaScript intersection observer
+
+- **Animation**: CSS transitions, keyframes, and JavaScript intersection observer
 
 ## Getting Started
 
@@ -37,10 +37,9 @@ This portfolio website highlights my expertise in:
 To customize this portfolio for your own use:
 
 1. Update the content in `index.html` with your information
-2. Replace project placeholders with your actual projects
+2. Replace project placeholders and images with your actual projects
 3. Update social media links and contact information
 4. Modify colors and styling in `styles.css` to match your brand
-
 
 ## Project Structure
 
@@ -49,6 +48,6 @@ portfolio/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
 ├── script.js           # JavaScript functionality
+├── images/             # Project images and assets
 ├── README.md           # Project documentation
-
 ```

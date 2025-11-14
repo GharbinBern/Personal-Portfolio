@@ -123,17 +123,6 @@ document.querySelectorAll('.skill-category').forEach(el => {
     observer.observe(el);
 });
 
-
-// Navbar Background on Scroll
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.nav');
-    if (window.scrollY > 100) {
-        nav.style.background = 'rgba(30, 41, 59, 0.95)';
-    } else {
-        nav.style.background = 'rgba(30, 41, 59, 0.9)';
-    }
-});
-
 // Project Section Scrolling
 function enhanceProjectScrolling() {
     const workSection = document.querySelector('#work');
