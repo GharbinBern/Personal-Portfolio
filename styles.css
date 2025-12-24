@@ -32,6 +32,7 @@
     --surface: #ffffff;
     --border: #e0e0e0;
     --success: #10b981;
+    --golden: #d7c12f;
 
     /* Typography */
     --font-mono: 'Courier New', 'Courier', monospace;
@@ -75,7 +76,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(54, 63, 136, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     padding: 1rem 2rem;
@@ -88,29 +89,45 @@ body {
 
 .nav-brand {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.brand-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--surface);
+}
+
+.brand-info {
+    display: flex;
     flex-direction: column;
 }
 
 .brand-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--surface);
     line-height: 1.2;
 }
 
 .brand-subtitle {
-    font-size: 0.8rem;
-    color: var(--text-muted);
+    font-size: 1rem;
+    color: var(--golden);
     font-weight: 400;
 }
 
 .nav-links {
     display: flex;
     gap: 2rem;
+    font-size: 1.1rem;
 }
 
 .nav-links a {
-    color: var(--secondary-color);
+    color: var(--golden);
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
@@ -118,7 +135,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--accent-color);
+    color: var(--golden);
 }
 
 .nav-links a::after {
@@ -128,7 +145,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--accent-color);
+    background: var(--golden);
     transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-radius: 1px;
 }
@@ -139,7 +156,7 @@ body {
 }
 
 .nav-links a.active {
-    color: var(--accent-color);
+    color: var(--golden);
 }
 
 /* Layout */
@@ -217,7 +234,7 @@ body {
 
 /* Section Styling */
 .section-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: var(--space-lg);
@@ -231,7 +248,7 @@ body {
 }
 
 .intro-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.8;
     color: var(--text-primary);
     margin-bottom: var(--space-md);
@@ -265,7 +282,7 @@ body {
 
 .exp-period {
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: var(--text-muted);
     font-weight: 500;
 }
@@ -273,6 +290,7 @@ body {
 .exp-description {
     color: var(--text-secondary);
     line-height: 1.7;
+    font-size: 1.3rem;
 }
 
 .company-link {
@@ -314,7 +332,7 @@ body {
 }
 
 .skill-category-title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: var(--space-sm);
@@ -330,7 +348,7 @@ body {
 .skill-tag {
     padding: 0.5rem 1rem;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 500;
     transition: var(--transition);
     cursor: default;
@@ -527,7 +545,7 @@ body {
 }
 
 .work-context {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--accent-color);
     font-weight: 500;
     margin-bottom: var(--space-sm);
@@ -549,7 +567,7 @@ body {
 .stack-title {
     font-weight: 600;
     color: var(--text-primary);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .stack-tags {
@@ -562,7 +580,7 @@ body {
     padding: 0.25rem 0.75rem;
     background: var(--surface);
     color: var(--text-secondary);
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 4px;
     border: 1px solid var(--border);
     font-family: var(--font-mono);
