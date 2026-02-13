@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const typewriterElement = document.querySelector('.typewriter');
     if (typewriterElement) {
         const words = typewriterElement.getAttribute('data-words').split(',');
-        new TypeWriter(typewriterElement, words, 80, 40, 1500);
+        new TypeWriter(typewriterElement, words, 100, 55, 1700);
     }
 });
 
