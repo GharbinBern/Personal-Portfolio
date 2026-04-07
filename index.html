@@ -1,316 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gharbin Bernard - Software Developer & Data Analyst</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gharbin Bernard — Computer Science &amp; Economics, NYUAD</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Minimal Navigation -->
-    <nav class="nav">
-        <div class="nav-brand">
-            <img src="images/profile.jpeg" alt="Gharbin Bernard" class="brand-image">
-            <div class="brand-info">
-                <span class="brand-text">Gharbin Bernard</span>
-                <span class="brand-subtitle">Software Developer & Data Analyst</span>
-            </div>
-        </div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </div>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div>
+      <div class="site-title">Gharbin Bernard</div>
+      <div class="site-subtitle">Software Developer &amp; Data Analyst</div>
+    </div>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
     </nav>
+  </div>
+</header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    I'm <span class="highlight">Gharbin</span>, a developer building 
-                    <span class="typewriter" data-words="data-driven applications,full-stack applications, analytics platforms"></span> 
-                  
-                </h1>
-                <div class="hero-arrow">
-                    <svg width="24" height="40" viewBox="0 0 24 40">
-                        <path d="M12 0L12 35M5 28L12 35L19 28" stroke="currentColor" stroke-width="2" fill="none"/>
-                    </svg>
-                </div>
-            </div>
+<main class="page">
+
+  <section class="section" id="about">
+    <p class="section-label">About</p>
+    <div class="about-grid">
+
+      <div>
+        <div class="photo-wrap">
+          <img src="images/profile.jpeg" alt="Gharbin Bernard">
         </div>
-        </section>
 
-        <!-- About Section -->
-        <section class="section" id="about">
-            <div class="container">
-                <div class="section-content">
-                    <div class="section-text">
-                        <p class="intro-text">
-                            I'm a Computer Science student at New York University Abu Dhabi with a minor in Economics, 
-                            graduating in 2027. I specialize in building full-stack applications and transforming complex data into actionable insights.
-                        </p>
-
-                        <p class="intro-text">
-                            Most recently, I worked as a Research and Data Analytics Intern at ImpactTulsa, where I processed 
-                            large-scale public sector datasets to support city leadership on public safety and education policy. 
-                            I reduced data processing time by 30% and integrated crime data across 70+ census tracts to enable 
-                            targeted intervention strategies.
-                        </p>
-
-                        <p class="intro-text">
-                            My work bridges software engineering and data science—from Formula 1 analytics dashboards and 
-                            car rental management systems to immersive VR museums. I'm driven by the challenge of turning 
-                            technical complexity into elegant, scalable solutions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section" id="experience">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3><a href="https://impacttulsa.org/" target="_blank" class="company-link">ImpactTulsa <i class="fas fa-external-link-alt"></i></a> - Research and Data Analytics Intern</h3>
-                        <span class="exp-period">Sep 2025 - Dec 2025</span>
-                    </div>
-                    <p class="exp-description">
-                        Engineered data pipelines using Python to process large-scale public sector datasets, reducing data processing time
-                        and enabling policy-driven analysis for public safety and K-12 education outcomes. Integrated crime datasets
-                        (homicide, aggravated assault, 911 calls) across 70+ census tracts to support targeted 
-                        intervention strategies. Analyzed arrest patterns using statistical summaries and visualizations, delivering actionable 
-                        insights to city leadership and nonprofit partners.
-                    </p>
-                </div>
-
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3><a href="https://www.nyuad-artgallery.org/" target="_blank" class="company-link">NYUAD Art Gallery <i class="fas fa-external-link-alt"></i></a> - Student Assistant</h3>
-                        <span class="exp-period">Mar 2024 - Dec 2024</span>
-                    </div>
-                    <p class="exp-description">
-                        Managed inventory and logistics for two major exhibitions, ensuring 100% material availability for 300+ visitors. 
-                        Maintained and optimized communication systems for 110+ artists and collaborators, improving coordination efficiency. 
-                        Supported curators and artists through event logistics and personalized welcome materials to enhance visitor experience.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section" id="skills">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag primary">Python</span>
-                            <span class="skill-tag primary">JavaScript</span>
-                            <span class="skill-tag primary">SQL</span>
-                            <span class="skill-tag primary">C++</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Development & Frameworks</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag primary">React.js</span>
-                            <span class="skill-tag primary">FastAPI</span>
-                            <span class="skill-tag primary">Node.js</span>
-                            <span class="skill-tag primary">MySQL</span>
-                            <span class="skill-tag primary">SQLite</span>
-                            <span class="skill-tag primary">MongoDB</span>
-                            <span class="skill-tag secondary">Express.js</span>
-                            <span class="skill-tag secondary">TailwindCSS</span>
-                            <span class="skill-tag secondary">Git</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Data & Analytics</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag primary">Pandas</span>
-                            <span class="skill-tag primary">NumPy</span>
-                            <span class="skill-tag primary">SQLAlchemy</span>
-                            <span class="skill-tag secondary">FastF1</span>
-                            <span class="skill-tag secondary">ETL Pipelines</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work Section -->
-        <section class="section" id="work">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="work-grid">
-                <!-- F1 Analytics Dashboard (NEW) -->
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="project-preview">
-                            <img src="images/f1_analytics.png" alt="F1 Analytics Dashboard Screenshot" class="project-screenshot f1-screenshot">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <div class="work-header">
-                            <h3>F1 ANALYTICS</h3>
-                            <div class="work-links">
-                                <a href="#" class="work-link">
-                                    <!-- <i class="fas fa-external-link-alt"></i> -->
-                                </a>
-                                <a href="https://github.com/GharbinBern/F1-Analytics" class="work-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <span class="work-context">Fall 2026</span>
-                        <p class="work-description">
-                            Built a Formula 1 analytics platform for tracking race weekends, comparing driver performance, 
-                            and analyzing team statistics. Implemented automated ETL pipeline using FastF1 to fetch, transform, and load 
-                            session data into SQLite. Features include season calendar tracking, driver comparison metrics (points, wins, 
-                            podiums, average finishes), race results with grid positions, and pit stop analytics across all teams.
-                        </p>
-                        <div class="work-stack">
-                            <span class="stack-title">Stack:</span>
-                            <div class="stack-tags">
-                                <span class="stack-tag">React 19</span>
-                                <span class="stack-tag">Vite</span>
-                                <span class="stack-tag">FastAPI</span>
-                                <span class="stack-tag">SQLite</span>
-                                <span class="stack-tag">FastF1</span>
-                                <span class="stack-tag">Pandas</span>
-                                <span class="stack-tag">SQLAlchemy</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Car Rental Management System -->
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="project-preview">
-                            <img src="images/car_rental.png" alt="Car Rental Management System Screenshot" class="project-screenshot">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <div class="work-header">
-                            <h3>CAR RENTAL MANAGEMENT SYSTEM</h3>
-                            <div class="work-links">
-                                <a href="https://car-rental-management-system-teal.vercel.app/" class="work-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="https://github.com/GharbinBern/Car-Rental-Management-System" class="work-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <span class="work-context">Spring 2025 </span>
-                        <p class="work-description">
-                            Built a full-stack car rental platform with MySQL, featuring secure JWT authentication 
-                            and role-based access. Designed optimized relational schema (3NF+) with constraints, views, and stored procedures. 
-                            Created interactive admin dashboards for monitoring rentals, maintenance, and revenue.
-                        </p>
-                        <div class="work-stack">
-                            <span class="stack-title">Stack:</span>
-                            <div class="stack-tags">
-                                <span class="stack-tag">React.js</span>
-                                <span class="stack-tag">FastAPI</span>
-                                <span class="stack-tag">Python</span>
-                                <span class="stack-tag">MySQL</span>
-                                <span class="stack-tag">TailwindCSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VR Museum -->
-                <div class="work-item">
-                    <div class="work-image">
-                        <div class="project-preview">
-                            <img src="images/virtual.png" alt="VR" class="project-screenshot">
-                        </div>
-                    </div>
-                    <div class="work-content">
-                        <div class="work-header">
-                            <h3>IMMERSIVE VR MUSEUM</h3>
-                            <div class="work-links">
-                                <a href="#" class="work-link">
-                                    <!-- <i class="fas fa-external-link-alt"></i> -->
-                                </a>
-                                <a href="https://github.com/GharbinBern/Virtual-Museum" class="work-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <span class="work-context">Fall 2023 / Virtual Reality Project</span>
-                        <p class="work-description">
-                            Developed an immersive VR museum with 20 interactive exhibits featuring 4 famous artworks and 20 historical 
-                            inventions to enhance children's engagement in learning history. Integrated advanced XR interactions using 
-                            Meta Quest 2, including hand tracking and gesture controls for optimal user experience.
-                        </p>
-                        <div class="work-stack">
-                            <span class="stack-title">Stack:</span>
-                            <div class="stack-tags">
-                                <span class="stack-tag">C#</span>
-                                <span class="stack-tag">Unity Hub</span>
-                                <span class="stack-tag">Meta Quest 2</span>
-                                <span class="stack-tag">XR Toolkit</span>
-                                <span class="stack-tag">3D Modeling</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-block">
+          B.S. in Computer Science, Minor in Economics<br>
+          New York University Abu Dhabi<br>
+          <a href="mailto:bg2696@nyu.edu">bg2696@nyu.edu</a>
         </div>
-        </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="contact-title">Have an idea? Get in touch!</h2>
-                <div class="contact-links">
-                    <a href="mailto:bg2696@nyu.edu" class="contact-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>bg2696@nyu.edu</span>
-                    </a>
-                    <a href="https://linkedin.com/in/bernard-gharbin" class="contact-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/in/bernard</span>
-                    </a>
-                    <a href="https://github.com/GharbinBern" class="contact-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                        <span>github-page</span>
-                    </a>
-                </div>
-            </div>
+        <div class="links-row">
+          <a class="link-pill" href="https://github.com/GharbinBern" target="_blank">GitHub</a>
+          <a class="link-pill" href="https://linkedin.com/in/bernard-gharbin" target="_blank">LinkedIn</a>
         </div>
-    </section>
-    </main>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>Made with ❤️  by Gharbin Bernard</p>
-            </div>
-        </div>
-    </footer>
+      <div class="bio">
+        <p>
+          I'm a Computer Science student at New York University Abu Dhabi with a minor in Economics,
+          graduating in 2027. I specialize in building full-stack applications and transforming complex
+          data into actionable insights.
+        </p>
+        <p>
+          Most recently, I worked as a Research and Data Analytics Intern at ImpactTulsa, where I processed
+          large-scale public sector datasets to support city leadership on public safety and education policy.
+          I reduced data processing time by 30% and integrated crime data across 70+ census tracts to enable
+          targeted intervention strategies.
+        </p>
+        <p>
+          My work bridges software engineering and data science — from Formula 1 analytics dashboards and
+          car rental management systems to immersive VR museums. I'm driven by the challenge of turning
+          technical complexity into elegant, scalable solutions.
+        </p>
+      </div>
 
-    <script src="script.js"></script>
+    </div>
+  </section>
+
+</main>
+
+
 </body>
 </html>
