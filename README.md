@@ -1,53 +1,34 @@
-# Portfolio Website
+# Portfolio 
 
-A modern, responsive portfolio website showcasing my work as a Data Analyst and Software Developer.
+A minimal, responsive portfolio website showcasing my work as a Software Developer & Data Analyst.
 
-## About
+## Pages
 
-This portfolio website highlights my expertise in:
-- Data Analysis & Visualization
-- Backend/Database Development
-- Python Programming
-- SQL & Database Management
+- **About** (`index.html`) — intro, background, and contact
+- **Experience** (`experience.html`) — work history
+- **Projects** (`projects.html`) — featured projects
+- **Skills** (`skills.html`) — technical skills
 
 
-## Features
+## Tech Stack
 
-- **Responsive Design**: Optimized for all device sizes
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Interactive Elements**: Smooth scrolling, mobile navigation, and form handling
-- **Performance Optimized**: Fast loading with efficient CSS and JavaScript
+- HTML5, CSS3, JavaScript (ES6+)
+- Custom CSS with Grid and Flexbox
+- Google Fonts 
 
-## Technologies Used
+## Running Locally
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS with CSS Grid and Flexbox
-- **Icons**: Font Awesome
+Open `index.html` directly in a browser, or use a local server (e.g. Live Server in VS Code).
 
-- **Animation**: CSS transitions, keyframes, and JavaScript intersection observer
-
-## Getting Started
-
-1. Clone this repository or download the files
-2. Open `index.html` in your web browser
-3. For development, use a local server like Live Server in VS Code
-
-## Customization
-
-To customize this portfolio for your own use:
-
-1. Update the content in `index.html` with your information
-2. Replace project placeholders and images with your actual projects
-3. Update social media links and contact information
-4. Modify colors and styling in `styles.css` to match your brand
-
-## Project Structure
+## Structure
 
 ```
 portfolio/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-├── images/             # Project images and assets
-├── README.md           # Project documentation
+├── index.html
+├── experience.html
+├── projects.html
+├── skills.html
+├── styles.css
+├── script.js
+└── images/
 ```
